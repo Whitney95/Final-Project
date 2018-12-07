@@ -9,13 +9,13 @@ BlackJack Simulation
 Purpose:
 1. Validate the well-known strategy on "Hit" or "Stand"
 2. Focus on the probability whether Players should surrender in advance or not if dealer's first card is Ace
-3. Adding rules of Joker to see how does the strategy would change
+3. Adding rules of Joker to see how does the strategy would 
 
 ## Simulation's variables of uncertainty
 List and describe your simulation's variables of uncertainty (where you're using pseudo-random number generation). For each such variable, how did you decide the range and probability distribution to use?  Do you think it's a good representation of reality?
 
-The strategy is based on the informaiton: sum of the first two cards of the player and the first card of the dealer.
-So the uncertainty here is dealer's second and probably the thrid and fourth card. So I simulate players' third card if they hit and dealer's remaining cards with randomly shuffled cards, taking away the dealt cards. And see the expecation of choosing hit and stand to decide which strategy is better under different situations.
+The strategy is based on the information: sum of the first two cards of the player and the first card of the dealer.
+So the uncertainty here is dealer's second and probably the third and fourth card. So I simulate players' third card if they hit and dealer's remaining cards with randomly shuffled cards, taking away the dealt cards. And see the expecation of choosing hit and stand to decide which strategy is better under different situations.
 
 ## Hypothesis or hypotheses before running the simulation:
 Hypothesis 1: The strategy matrix I found is valid and reasonable
