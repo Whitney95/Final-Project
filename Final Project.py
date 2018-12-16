@@ -260,12 +260,12 @@ if __name__ == '__main__':
 
 # Here is to validate the strategy matrix
 
-    # matrix_cal = []
-    #
-    # for i in range(7,19):
-    #       for j in range(2, 12):
-    #          matrix_cal.append(StandorHit(i, j, 3))
-    #print(matrix_cal)
+    matrix_cal = []
+
+    for i in range(7,19):
+          for j in range(2, 12):
+             matrix_cal.append(StandorHit(i, j, 3))
+    print(matrix_cal)
 
 # explore more on situation when dealer's first card is Ace
 
