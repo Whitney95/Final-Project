@@ -39,7 +39,7 @@ def StandorHit(first2sum, dealer1card,numofdeck)->str:
     """
 
     list = []
-    for i in range(1,10):
+    for i in range(1,5):
         h_results = []
         s_results = []
         for match in range(1000):
@@ -109,7 +109,7 @@ def rules_of_wildcard1(player1card, dealer1card,deck):
     """
 
     list = []
-    for i in range(1,10):
+    for i in range(1,5):
         Jh_results = []
         Js_results = []
         for match in range(1000):
@@ -265,7 +265,8 @@ if __name__ == '__main__':
     for i in range(7,19):
           for j in range(2, 12):
              matrix_cal.append(StandorHit(i, j, 3))
-    print(matrix_cal)
+    #print(matrix_cal)
+    print(np.array(matrix_cal).reshape(12, 10))
 
 # explore more on situation when dealer's first card is Ace
 
@@ -283,6 +284,6 @@ if __name__ == '__main__':
     for i in range(2, 11):
         for j in range(2, 12):
             J_allresults.append(rules_of_wildcard1(i, j, deck=deck))
-    print(J_allresults)
+    #print(J_allresults)
     print(np.array(J_allresults).reshape(9, 10))
 
